@@ -2,11 +2,9 @@ from random import randint
 import timeit
 import sys
 
-
 # lista_sin_ordenar = [randint(0,100) for i in range(10)]
 m = [randint(0,100000) for i in range(int(sys.argv[1]))]
 sys.setrecursionlimit(max(sys.getrecursionlimit(), len(m)+100000))
-
 
 def sort_by_selection(m):
     lista_sin_ordenar = list(m)
